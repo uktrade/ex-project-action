@@ -1,0 +1,9 @@
+# See https://docs.github.com/en/actions/creating-actions/creating-a-composite-action#creating-an-action-metadata-file
+name: "EX Project action"
+description: "Test action"
+runs:
+  using: "composite"
+  steps:
+    - name: Run check.sh
+      run: check.sh
+      shell: bash
